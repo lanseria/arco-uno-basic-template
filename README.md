@@ -33,7 +33,7 @@
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit lanseria/arco-uno-basic-template my-vitesse-app
-cd my-vitesse-app
+npx degit lanseria/arco-uno-basic-template my-arco-uno-app
+cd my-arco-uno-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
