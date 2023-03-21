@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const value = ref('')
 </script>
 
 <template>
@@ -7,6 +8,7 @@
       <a-typography-title>
         Arco Uno Basic Template
       </a-typography-title>
+      <ParentSelect v-model="value" placeholder="请选择" />
       <a-space>
         <a-button type="primary">
           Primary

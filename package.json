@@ -11,7 +11,7 @@
     "up": "taze major -I"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.43.2",
+    "@arco-design/web-vue": "2.44.2",
     "@vueuse/core": "^9.13.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
@@ -19,17 +19,17 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",
     "@iconify-json/carbon": "^1.1.16",
-    "@types/node": "^18.14.6",
-    "@unocss/reset": "^0.50.4",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "eslint": "^8.35.0",
-    "pnpm": "^7.29.0",
-    "taze": "^0.9.0",
+    "@types/node": "^18.15.5",
+    "@unocss/reset": "^0.50.6",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "eslint": "^8.36.0",
+    "pnpm": "^7.30.0",
+    "taze": "^0.9.1",
     "typescript": "^4.9.5",
-    "unocss": "^0.50.4",
+    "unocss": "^0.50.6",
     "unplugin-auto-import": "^0.15.1",
-    "unplugin-vue-components": "^0.24.0",
-    "vite": "^4.1.4",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.2.1",
     "vite-plugin-pages": "^0.28.0",
     "vue-tsc": "^1.2.0"
   },
