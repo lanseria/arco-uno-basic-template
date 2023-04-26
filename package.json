@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "vite --port 3333 --host",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -23,7 +23,7 @@
     "@unocss/reset": "^0.51.8",
     "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.39.0",
-    "pnpm": "^7.32.2",
+    "pnpm": "^8.3.1",
     "taze": "^0.9.2",
     "typescript": "^5.0.4",
     "unocss": "^0.51.8",
