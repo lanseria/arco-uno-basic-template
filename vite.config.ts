@@ -2,6 +2,7 @@ import path from 'path'
 import { ConfigEnv, UserConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
@@ -36,10 +37,9 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       sourcemap: true,
     },
     plugins: [
-      vue({
-        reactivityTransform: true,
-      }),
+      vue(),
   
+      vueJsx(),
       // https://github.com/hannoeru/vite-plugin-pages
       Pages(),
   
@@ -48,7 +48,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         resolvers: [ArcoResolver()],
         imports: [
           'vue',
-          'vue/macros',
           'vue-router',
           '@vueuse/core',
         ],
@@ -62,11 +61,25 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       // https://github.com/antfu/vite-plugin-components
       Components({
         dts: true,
+        resolvers: [
+          ArcoResolver({
+            resolveIcons: true,
+            sideEffect: false,
+          }),
+        ],
       }),
   
       // https://github.com/antfu/unocss
       // see unocss.config.ts for config
       Unocss(),
     ],
+
+    optimizeDeps: {
+      include: [
+        '@arco-design/web-vue/es/locale/lang/zh-cn',
+        '@vueuse/core',
+      ],
+    },
+
   }
 }
