@@ -1,13 +1,13 @@
 <script lang="ts" setup></script>
 
 <template>
-  <nav text-xl mt-6 inline-flex gap-2>
+  <nav mt-6 inline-flex gap-2 text-xl>
     <button icon-btn @click="toggleDark()">
-      <div dark:i-carbon-moon i-carbon-sun />
+      <div i-carbon-sun dark:i-carbon-moon />
     </button>
 
     <a
-      icon-btn i-carbon-logo-github
+      i-carbon-logo-github icon-btn
       rel="noreferrer"
       href="https://github.com/lanseria/arco-uno-basic-template"
       target="_blank"
