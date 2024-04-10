@@ -39,9 +39,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       sourcemap: true,
     },
     plugins: [
-      VueRouter({
-        /* options */
-      }),
+      VueRouter(),
       vue(),
 
       vueJsx(),

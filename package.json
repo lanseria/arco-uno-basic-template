@@ -25,9 +25,9 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.12.2",
+    "@antfu/eslint-config": "^2.13.2",
     "@iconify-json/carbon": "^1.1.31",
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.7",
     "@unocss/eslint-plugin": "^0.59.0",
     "@unocss/reset": "^0.59.0",
     "@vitejs/plugin-vue": "^5.0.4",
@@ -44,7 +44,7 @@
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-router": "^0.8.5",
     "vite": "^5.2.8",
-    "vue-tsc": "^2.0.10"
+    "vue-tsc": "^2.0.11"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
